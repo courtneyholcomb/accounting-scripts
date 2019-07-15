@@ -21,3 +21,8 @@ melon_seedlessness = {
     4: False,
     5: False,
 }
+
+melons = { melon_names[i]: {'price': melon_prices[i], 
+             'seedless': melon_seedlessness[i], 'flesh_color': None,
+             'rind_color': None, 'avg_weight': None }
+            for i in range(1, len(melon_names) + 1) }
